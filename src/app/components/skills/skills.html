@@ -1,0 +1,25 @@
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <span class="eyebrow">What I Work With</span>
+      <h2 class="section-title">Skills &amp; Tech Stack</h2>
+      <p class="section-sub">The tools and technologies I reach for to build and ship products.</p>
+    </div>
+
+    <div class="skills__grid">
+      @for (group of groups; track group.title) {
+        <div class="card skills__card" appReveal>
+          <div class="skills__card-head">
+            <span class="skills__icon">{{ group.icon }}</span>
+            <h3>{{ group.title }}</h3>
+          </div>
+          <ul class="skills__tags">
+            @for (item of group.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

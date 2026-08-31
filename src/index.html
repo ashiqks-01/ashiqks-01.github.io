@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ashiq KS — Full Stack Developer</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ashiq KS — Full Stack Developer specializing in Angular, Java, Spring Boot, Python and SQL. Building end-to-end web applications.">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <meta name="author" content="Ashiq KS">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ashiq KS — Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer — Angular, Java, Spring Boot, Python, SQL.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

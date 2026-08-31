@@ -1,0 +1,27 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about__bio p { font-size: 1.05rem; }
+.about__bio strong { color: var(--text); font-weight: 600; }
+
+.about__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.about__card { padding: 1.4rem; }
+.about__icon { font-size: 1.6rem; display: block; margin-bottom: 0.6rem; }
+.about__card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--text); }
+.about__card p { font-size: 0.9rem; margin: 0; }
+
+@media (max-width: 860px) {
+  .about__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: 480px) {
+  .about__cards { grid-template-columns: 1fr; }
+}

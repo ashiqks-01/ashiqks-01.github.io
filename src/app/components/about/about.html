@@ -1,0 +1,39 @@
+<section id="about" class="section section--alt">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <span class="eyebrow">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__bio" appReveal>
+        <p>
+          I'm a <strong>Full Stack Developer</strong> who enjoys turning ideas into
+          reliable, well-crafted web applications. My day-to-day spans
+          <strong>Angular</strong> and <strong>TypeScript</strong> on the frontend and
+          <strong>Java</strong> with <strong>Spring Boot</strong> on the backend, all
+          tied together with solid <strong>SQL</strong> data models.
+        </p>
+        <p>
+          I care about clean architecture, readable code, and interfaces that feel
+          effortless to use. Right now I'm deepening my <strong>Python</strong> backend
+          skills and exploring better ways to design and ship software.
+        </p>
+        <p>
+          When something can be automated, structured, or simplified — that's where I
+          like to be.
+        </p>
+      </div>
+
+      <div class="about__cards">
+        @for (h of highlights; track h.title) {
+          <div class="card about__card" appReveal>
+            <span class="about__icon">{{ h.icon }}</span>
+            <h3>{{ h.title }}</h3>
+            <p>{{ h.text }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

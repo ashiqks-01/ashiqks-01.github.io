@@ -1,0 +1,44 @@
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.project--featured::after {
+  content: 'Featured';
+  position: absolute;
+  top: 14px; right: -32px;
+  transform: rotate(45deg);
+  background: var(--grad);
+  color: #0b0b12;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--font-head);
+  padding: 3px 40px;
+}
+
+.project__top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+.project__folder { color: var(--accent); }
+.project__links { display: flex; gap: 0.75rem; }
+.project__links a { color: var(--text-dim); }
+.project__links a:hover { color: var(--accent); }
+
+.project__name { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text); }
+.project__desc { font-size: 0.92rem; flex: 1; }
+
+.project__tags { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.project__tags li {
+  font-size: 0.75rem;
+  font-family: var(--font-head);
+  color: var(--accent-3);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(125, 207, 255, 0.08);
+}
