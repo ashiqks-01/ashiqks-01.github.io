@@ -17,19 +17,28 @@ interface Project {
   styleUrl: './projects.scss'
 })
 export class Projects {
-  // TODO: refine descriptions and add repo/live links as projects go public.
   readonly projects: Project[] = [
     {
-      name: 'Task Management System',
-      description: 'A full-stack app to create, assign, and track tasks with status boards and due dates.',
-      tags: ['Angular', 'Spring Boot', 'MySQL'],
+      name: 'Vendor Purchase Request (VPR) Portal',
+      description: 'Procurement platform (PR → RFQ → Approval → PO) handling ~10,000 purchase requests/year for an enterprise FMCG client. Refactored a 12,000+ line monolithic controller into 3 domain services across 130+ endpoints with zero downtime, automated SAP purchase-order delivery via FTP/CSV, and built a configurable approval-routing engine with plant-based and dynamic budget-threshold logic.',
+      tags: ['Angular', 'TypeScript', 'Grails (Groovy)', 'MySQL', 'REST APIs'],
       featured: true
+    },
+    {
+      name: 'Vendor Management (VDM) Portal',
+      description: 'Vendor sourcing platform (RFQ → Submission → L0–L3 Approval → SAP Push). Traced and fixed a recurring production outage caused by leaked Hibernate sessions across 15+ methods, and built a streaming Excel export (Apache POI SXSSF) supporting 100,000+ rows across 75 columns.',
+      tags: ['Spring Boot', 'Hibernate/JPA', 'MySQL', 'Apache POI'],
+      featured: true
+    },
+    {
+      name: 'TaskMan — Marketing Operations Portal',
+      description: 'Task, project, and meeting follow-up tracker used across marketing teams. Built a Minutes-of-Meeting module that converts free-form notes into structured, owner-assigned action items with due dates and full change-history logging.',
+      tags: ['Grails (Groovy)', 'GORM/Hibernate', 'MySQL', 'JasperReports']
     },
     {
       name: 'Recipe Finder',
       description: 'Search and discover recipes by ingredients, with a clean, responsive interface.',
-      tags: ['Angular', 'REST API', 'TypeScript'],
-      featured: true
+      tags: ['Angular', 'REST API', 'TypeScript']
     },
     {
       name: 'Tracker',
@@ -41,11 +50,6 @@ export class Projects {
       description: 'A Java-based project exploring structured application flow and clean design.',
       tags: ['Java'],
       repo: 'https://github.com/ashiqks-01/genesis-flow'
-    },
-    {
-      name: 'Notes App',
-      description: 'A lightweight note-taking application with create, edit, and organise features.',
-      tags: ['Angular']
     },
     {
       name: 'Portfolio Website',
