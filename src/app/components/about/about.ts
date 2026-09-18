@@ -9,9 +9,9 @@ import { Reveal } from '../../reveal.directive';
 })
 export class About {
   readonly highlights = [
-    { icon: '🎯', title: 'Full-Stack Delivery', text: 'Comfortable owning a feature end-to-end, from database schema to polished UI.' },
-    { icon: '⚙️', title: 'Robust Backends', text: 'REST APIs with Java & Spring Boot, backed by well-designed SQL databases.' },
-    { icon: '🎨', title: 'Modern Frontends', text: 'Responsive, accessible interfaces built with Angular and TypeScript.' },
-    { icon: '🚀', title: 'Always Learning', text: 'Currently expanding into Python backends and cleaner architecture.' }
+    { icon: 'target', title: 'Full-Stack Delivery', text: 'Comfortable owning a feature end-to-end, from database schema to polished UI.' },
+    { icon: 'gear', title: 'Robust Backends', text: 'REST APIs with Java & Spring Boot, backed by well-designed SQL databases.' },
+    { icon: 'layers', title: 'Modern Frontends', text: 'Responsive, accessible interfaces built with Angular and TypeScript.' },
+    { icon: 'rocket', title: 'Always Learning', text: 'Currently expanding into Python backends and cleaner architecture.' }
   ];
 }

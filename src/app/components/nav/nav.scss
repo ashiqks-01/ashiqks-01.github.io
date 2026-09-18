@@ -3,7 +3,8 @@
   top: 0; left: 0; right: 0;
   z-index: 50;
   background: var(--nav-bg);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -18,9 +19,9 @@
 .nav__logo {
   display: grid; place-items: center;
   width: 34px; height: 34px;
-  border-radius: 9px;
+  border-radius: 10px;
   background: var(--grad);
-  color: #fff;
+  color: #0a0d14;
   font-size: 0.85rem;
   font-weight: 800;
 }
@@ -39,7 +40,7 @@
   border-radius: 8px;
   color: var(--accent) !important;
 }
-.nav__cta:hover { border-color: var(--accent); background: rgba(122, 162, 247, 0.08); }
+.nav__cta:hover { border-color: var(--accent); background: rgba(var(--accent-rgb), 0.1); }
 
 .theme-toggle {
   display: grid; place-items: center;

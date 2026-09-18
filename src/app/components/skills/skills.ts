@@ -15,9 +15,9 @@ interface SkillGroup {
 })
 export class Skills {
   readonly groups: SkillGroup[] = [
-    { title: 'Frontend', icon: '🎨', items: ['Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'RxJS'] },
-    { title: 'Backend', icon: '⚙️', items: ['Java', 'Spring Boot', 'Python', 'REST APIs'] },
-    { title: 'Database', icon: '🗄️', items: ['MySQL', 'SQL', 'JPA / Hibernate'] },
-    { title: 'Tools & Workflow', icon: '🛠️', items: ['Git', 'GitHub', 'npm', 'VS Code', 'Postman'] }
+    { title: 'Frontend', icon: 'layers', items: ['Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'RxJS'] },
+    { title: 'Backend', icon: 'gear', items: ['Java', 'Spring Boot', 'Python', 'REST APIs'] },
+    { title: 'Database', icon: 'database', items: ['MySQL', 'SQL', 'JPA / Hibernate'] },
+    { title: 'Tools & Workflow', icon: 'tool', items: ['Git', 'GitHub', 'npm', 'VS Code', 'Postman'] }
   ];
 }

@@ -14,8 +14,16 @@
   gap: 1rem;
 }
 
-.about__card { padding: 1.4rem; }
-.about__icon { font-size: 1.6rem; display: block; margin-bottom: 0.6rem; }
+.about__card { padding: 1.5rem; }
+.about__icon {
+  display: grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  margin-bottom: 0.9rem;
+  border-radius: var(--radius-xs);
+  background: var(--surface-2);
+  color: var(--accent-3);
+}
 .about__card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--text); }
 .about__card p { font-size: 0.9rem; margin: 0; }
 

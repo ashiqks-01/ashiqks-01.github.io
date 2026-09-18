@@ -6,20 +6,22 @@
 
 .skills__card { padding: 1.5rem; }
 
-.skills__card-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
-.skills__icon { font-size: 1.4rem; }
-.skills__card-head h3 { margin: 0; font-size: 1.15rem; color: var(--text); }
+.skills__card-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1.2rem; }
+.skills__icon {
+  display: grid;
+  place-items: center;
+  width: 34px; height: 34px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-2);
+  color: var(--accent-3);
+}
+.skills__card-head h3 { margin: 0; font-size: 1.1rem; color: var(--text); }
 
 .skills__tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.skills__tags li {
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+.skills__tags li.chip { transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
+.skills__card:hover .skills__tags li.chip { border-color: rgba(var(--accent-rgb), 0.35); }
+.skills__tags li.chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.1);
 }
-.skills__card:hover .skills__tags li { border-color: rgba(122, 162, 247, 0.4); }
-.skills__tags li:hover { color: var(--accent); border-color: var(--accent); background: rgba(122, 162, 247, 0.1); }

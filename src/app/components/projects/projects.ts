@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgTemplateOutlet } from '@angular/common';
 import { Reveal } from '../../reveal.directive';
 
 interface Project {
@@ -12,7 +13,7 @@ interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [Reveal],
+  imports: [Reveal, NgTemplateOutlet],
   templateUrl: './projects.html',
   styleUrl: './projects.scss'
 })
@@ -47,4 +48,7 @@ export class Projects {
       repo: 'https://github.com/ashiqks-01/genesis-flow'
     }
   ];
+
+  readonly featuredProjects = this.projects.filter((p) => p.featured);
+  readonly otherProjects = this.projects.filter((p) => !p.featured);
 }
