@@ -20,25 +20,20 @@ export class Projects {
   readonly projects: Project[] = [
     {
       name: 'Vendor Purchase Request (VPR) Portal',
-      description: 'Procurement platform (PR → RFQ → Approval → PO) handling ~10,000 purchase requests/year for an enterprise FMCG client. Refactored a 12,000+ line monolithic controller into 3 domain services across 130+ endpoints with zero downtime, automated SAP purchase-order delivery via FTP/CSV, and built a configurable approval-routing engine with plant-based and dynamic budget-threshold logic.',
+      description: 'A procurement portal that takes purchase requests from creation through vendor quotes, approvals, and final purchase order — handling around 10,000 requests a year. Automated purchase-order delivery to SAP and built a configurable, rule-based approval workflow.',
       tags: ['Angular', 'TypeScript', 'Grails (Groovy)', 'MySQL', 'REST APIs'],
       featured: true
     },
     {
       name: 'Vendor Management (VDM) Portal',
-      description: 'Vendor sourcing platform (RFQ → Submission → L0–L3 Approval → SAP Push). Traced and fixed a recurring production outage caused by leaked Hibernate sessions across 15+ methods, and built a streaming Excel export (Apache POI SXSSF) supporting 100,000+ rows across 75 columns.',
+      description: 'A vendor sourcing platform that manages RFQs, vendor submissions, and multi-level approvals before pushing final data to SAP. Fixed a recurring production crash and added bulk Excel exports for large reports.',
       tags: ['Spring Boot', 'Hibernate/JPA', 'MySQL', 'Apache POI'],
       featured: true
     },
     {
       name: 'TaskMan — Marketing Operations Portal',
-      description: 'Task, project, and meeting follow-up tracker used across marketing teams. Built a Minutes-of-Meeting module that converts free-form notes into structured, owner-assigned action items with due dates and full change-history logging.',
+      description: 'An internal tool for tracking tasks, projects, and meeting follow-ups across marketing teams, including a module that turns meeting notes into trackable, owner-assigned action items.',
       tags: ['Grails (Groovy)', 'GORM/Hibernate', 'MySQL', 'JasperReports']
-    },
-    {
-      name: 'Recipe Finder',
-      description: 'Search and discover recipes by ingredients, with a clean, responsive interface.',
-      tags: ['Angular', 'REST API', 'TypeScript']
     },
     {
       name: 'Tracker',
@@ -50,12 +45,6 @@ export class Projects {
       description: 'A Java-based project exploring structured application flow and clean design.',
       tags: ['Java'],
       repo: 'https://github.com/ashiqks-01/genesis-flow'
-    },
-    {
-      name: 'Portfolio Website',
-      description: 'This site — a fast, responsive personal portfolio built with the latest Angular.',
-      tags: ['Angular', 'SCSS'],
-      repo: 'https://github.com/ashiqks-01'
     }
   ];
 }
